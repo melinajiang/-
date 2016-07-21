@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>div+css布局练习</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<style type="text/css">
+body{padding:0px;margin:0px;}
+
+#main {margin:auto;padding:0;background: yellow;width:90%;}
+#layout { height: 300px; width: 80%; background: #99FFcc; margin:auto; height:50px;}
+
+#content { width:80%; margin:0 auto;min-width:700px;}
+#side { background: #99FF99; height: 60px; width: 50%; float: left; }
+#main1 { background: #99FFFF; height: 60px; width: 50%; float: left;}
+
+#waibian2 {width:80%; margin:0 auto;clear:both;}
+#side2 {float:left;width:200px;}
+
+#waibian3 {width:80%; margin:0 auto;clear:both;}
+#side3 {float:left;width:200px;}
+#main3 {margin-left:150px;}
+
+#waibian4 {width:90%;background:#CCFFCC;margin:auto;text-align:center;}
+#libian1 {width:150px; height:80px;background:#FFFF66;float:left;}
+#libian2 {width:200px; height:80px;background:#FFFF33;float:right}
+#libian3 {height:80px;background:#FFCCFF;}
+</style>
+</head>
+
+<body>
+<!-- 设置居中 -->
+<div id="main">
+    <div id="layout">此处显示  id "layout" 的内容</div>
+</div>
+
+<!-- 设置外层的宽度为80%,并设置一个最新宽度值，里面的div按百分比自适宜 -->
+<div id="content">
+  <div id="side">此处显示 id "side" 的内容</div>
+  <div id="main1">此处显示 id "main" 的内容</div>
+</div>
+
+<!--图片跟文字一行，并且文字在超出图片的高度后自动从图片的下面换行 -->
+<div id="waibian2">
+    <div id="side2">
+        <img src="http://www.aa25.cn/uploadfile/taobao0903/20090212165039036721.gif" width="192" height="80" />
+    </div>
+    <div id="main2">
+    Javascript[1] 是一种由Netscape的LiveScript发展而来的原型化继承的基于对象的动态类型的区分大小写的客户端脚本语言，主要目的是为了解决服务器端语言，比如Perl，遗留的速度问题，为客户提供更流畅的浏览效果。当时服务端需要对数据进行验证，由于网络速度相当缓慢，只有28.8kbps，验证步骤浪费的时间太多。于是Netscape的浏览器Navigator加入了Javascript，提供了数据验证的基本功能，js的作用也主要在实现网页的一些特效，css难以实现的特效，通常和Jquery，Ajax,联合使用.
+    </div>
+</div>
+
+<!--图片跟文字一行，并且文字在超出图片的高度后还是在同一列 -->
+<div id="waibian3">
+    <div id="side3">
+        <img src="http://www.aa25.cn/uploadfile/taobao0903/20090212165039036721.gif" width="192" height="80" />
+    </div>
+    <div id="main3">
+    Javascript[1] 是一种由Netscape的LiveScript发展而来的原型化继承的基于对象的动态类型的区分大小写的客户端脚本语言，主要目的是为了解决服务器端语言，比如Perl，遗留的速度问题，为客户提供更流畅的浏览效果。当时服务端需要对数据进行验证，由于网络速度相当缓慢，只有28.8kbps，验证步骤浪费的时间太多。于是Netscape的浏览器Navigator加入了Javascript，提供了数据验证的基本功能，js的作用也主要在实现网页的一些特效，css难以实现的特效，通常和Jquery，Ajax,联合使用.
+    </div>
+</div>
